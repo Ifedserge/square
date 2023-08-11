@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/dust.png);
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {width:0px;}
+.squares{
+    height: 3000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.squares__container{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100%; */
+    /* margin-bottom: 100%; */
+}
+
+.square__inside{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(210, 199, 199);
+    opacity: .7;
+    margin: 10px;
+    transition: transform 1s ease-in-out;
+}
+
+.square__inside{
+    transform-origin: center ;
+}
+
+.scr{
+    color: aliceblue;
+    font-size: 24px;
+    display: none;
+}
